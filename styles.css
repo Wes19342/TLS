@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #121212;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ff7f;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #00ff7f;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #00cc66;
+}
+
+.server-status {
+    text-align: center;
+    margin: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background: #333;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #00ff7f;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00cc66;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
