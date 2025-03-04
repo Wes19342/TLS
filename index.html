@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Minecraft Server</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Rules</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <button class="login-btn" onclick="openLogin()">Login</button>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to the Ultimate Minecraft Server</h1>
+        <p>Join the adventure. Explore endless possibilities.</p>
+        <button class="cta-btn">Join Now</button>
+    </header>
+
+    <section class="server-status">
+        <h2>Server Status:</h2>
+        <p id="status">Checking...</p>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogin()">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Submit</button>
+            <p id="loginMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
